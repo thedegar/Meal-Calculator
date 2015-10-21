@@ -83,7 +83,8 @@ main > div {
 
 #finalCheck {
 	border: 5px solid black;
-	width: 700px;
+	width: 90%;
+	height: 90em;
 	border-radius: 20px;
 	background-color: white;
 	text-align: center;
@@ -94,6 +95,6 @@ main > div {
 	float: left;
 }
 
-.guestOrders {
+.guestOrder {
 	float: right;
 }

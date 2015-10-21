@@ -69,22 +69,29 @@ $(document).on("click","#menu .items",function() {
 
 //Show "Get the check" button
 $(document).on("click","#orderButton",function() {
-	if (currentOrder.length > 0) {
-		$("#checkButton").show();
-		$("#orderButton").text("Click an item to start another order");
-		completeGuest();
-	}
+	completeGuest();
+});
+
+//Handle click event on "Get the check" button
+$(document).on("click","#checkButton",function() {
+	completeGuest();
+	$("#menu,.order,#newItem").hide();
+	$("#finalCheck").show();
 });
 
 //Record a guest's order in DOM and in memory, clear the current order, prep for next guest
 function completeGuest () {
-	var items = $("#currentOrder").children().clone();
-	$("#totalOrder,.guestOrder").append(items);
-	$("#currentOrder h2").remove();
-	$("#totalOrder h3").remove();
-	guest += 1;
-	order.push(currentOrder);
-	currentOrder = [];
-	$("#currentOrder h3").text("Guest" + guest);
+	if (currentOrder.length > 0) {
+		$("#checkButton").show();
+		$("#orderButton").text("Click an item to start another order");
+		var items = $("#currentOrder").children().clone();
+		$("#totalOrder,.guestOrder").append(items);
+		$("#currentOrder h2").remove();
+		$("#totalOrder h3").last().remove();
+		guest += 1;
+		order.push(currentOrder);
+		currentOrder = [];
+		$("#currentOrder h3").text("Guest" + guest);
+	};
 }
 
