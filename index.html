@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meal Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Tyler's Steakhouse</h1>
+		</div>
+	</header>
+
+	<main>
+		<div id="menu">
+			<h2 class="items">NY Strip $24.00</h2>
+			<h2 class="items">Ribeye $22.00</h2>
+			<h2 class="items">Porterhouse $34.00</h2>
+			<h2 class="items">Filet $28.00</h2>
+			<h2 class="items">Chicken $20.00</h2>
+			<h2 class="items">Potato $5.00</h2>
+			<h2 class="items">Carrots $6.00</h2>
+			<h2 class="items">Salad $4.00</h2>
+			<h2 class="items">Tea $2.50</h2>
+			<h2 class="items">Wine $11.00</h2>
+			<h2 id="addItem">Add an item</h2>
+		</div>
+		<div class="order">
+			<h2 id="checkButton">Complete all orders and get your check</h2>
+			<h2 id="orderButton">Click menu items to start your Order</h2>
+			<section id="currentOrder">
+				<h3>Guest1</h3>
+			</section>
+		</div>
+		<form id="newItem">
+			Item: <input type="text" id="item">
+			Price: <input type="text" id="price">
+			<input id="newItemButton" type="button" value="Enter">
+		</form>
+		<section id="finalCheck">
+			<div id="totalOrder">
+				<h3>Total Bill</h3>
+			</div>
+			<div class="guestOrder">
+				<h3>Guest Bills</h3>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

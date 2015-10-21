@@ -1,0 +1,99 @@
+* {
+	/*border: 1px solid red;*/
+}
+
+body {
+	min-width: 900px;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	vertical-align: center;
+	width: 600px;
+	height: 60px;
+	padding: 20px 0;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: center;
+	vertical-align: center;
+	padding: 5px 5px;
+}
+
+h2 {
+	font-size: 20px;
+	border-radius: 10px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+}
+
+main {
+	clear: both;
+	width: 840px;
+	min-height: 400px;
+	margin: 10px;
+	height: inherit;
+}
+
+header {
+	width: 850px;
+}
+
+main > div {
+	clear: both;
+	border-radius: 20px;
+	display: inline-block;
+	border: 5px solid #66FFFF;
+	text-align: center;
+}
+
+#menu {
+	width: 400px;
+}
+#menu > h2 {
+	border: 2px solid #66FFFF;
+}
+#addItem {
+	background-color: #CC00FF;
+}
+.order {
+	width: 400px;
+	float: right;
+}
+#orderButton {
+	background: #66FFFF;
+}
+#currentOrder > .items {
+	display: block;
+}
+#currentOrder > h2 {
+	display: none;
+}
+#checkButton {
+	background: #CC00FF;
+	display: none;
+	margin-bottom: 50px;
+}
+#newItem {
+	padding: 5px;
+	display: none;
+}
+
+#finalCheck {
+	border: 5px solid black;
+	width: 700px;
+	border-radius: 20px;
+	background-color: white;
+	text-align: center;
+	display: none;
+}
+
+#totalOrder {
+	float: left;
+}
+
+.guestOrders {
+	float: right;
+}
